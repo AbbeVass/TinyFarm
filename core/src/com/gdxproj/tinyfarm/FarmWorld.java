@@ -2,6 +2,10 @@ package com.gdxproj.tinyfarm;
 
 import java.util.Vector;
 
+/**
+ * Class for the world.
+ * Contains plants, inventory, etc.
+ */
 public class FarmWorld {
     private static FarmWorld __instance;
     

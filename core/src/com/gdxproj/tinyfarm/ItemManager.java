@@ -14,7 +14,17 @@ public class ItemManager {
      */
     private static final Item[] __items = {
         new WheatSeedItem(),
-        new WheatItem()
+        new WheatItem(),
+        new CarrotSeedItem(),
+        new CarrotItem(),
+        new OnionSeedItem(),
+        new OnionItem(),
+        new CabbageSeedItem(),
+        new CabbageItem(),
+        new PumpkinSeedItem(),
+        new PumpkinItem(),
+        new TomatoSeedItem(),
+        new TomatoItem()
     };
 
     public HashMap<String, Item> _itemMap;

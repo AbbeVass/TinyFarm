@@ -1,24 +1,24 @@
 package com.gdxproj.tinyfarm;
 
-public class WheatSeedItem extends Item {
+public class PumpkinSeedItem extends Item {
     @Override
     String getNickname() {
-        return "wheatSeed";
+        return "pumpkinSeed";
     }
 
     @Override
     String getName() {
-        return "Wheat Seed";
+        return "Pumpkin Seed";
     }
 
     @Override
     String getDescription() {
-        return "Use to place a wheat plant.";
+        return "Use to place a pumpkin plant.";
     }
 
     @Override
     int getAppearance() {
-        return 13;
+        return 10;
     }
 
     @Override
@@ -26,14 +26,14 @@ public class WheatSeedItem extends Item {
         FarmWorld world = FarmWorld.getInstance();
 
         /*
-         * Create a new wheat plant entity.
+         * Create a new pumpkin plant entity.
          */
-        WorldEntity wheatPlant = new WheatPlant(tileX, tileY);
+        WorldEntity pumpkinPlant = new PumpkinPlant(tileX, tileY);
 
         /*
-         * Add the wheat plant entity to the world.
+         * Add the pumpkin plant entity to the world.
          */
-        world.addEntity(wheatPlant);
+        world.addEntity(pumpkinPlant);
         
         /*
          * Returning true means the seed item will be consumed.

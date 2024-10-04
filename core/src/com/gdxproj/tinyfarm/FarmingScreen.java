@@ -68,7 +68,12 @@ public class FarmingScreen implements Screen {
         worldBatch = new SpriteBatch();
 
         try {
-            FarmWorld.getInstance().getInventory().addItem(ItemManager.getInstance().getItemFromNickname("wheatSeed"), 3);
+            FarmWorld.getInstance().getInventory().addItem(ItemManager.getInstance().getItemFromNickname("wheatSeed"), 10);
+            FarmWorld.getInstance().getInventory().addItem(ItemManager.getInstance().getItemFromNickname("carrotSeed"), 10);
+            FarmWorld.getInstance().getInventory().addItem(ItemManager.getInstance().getItemFromNickname("onionSeed"), 10);
+            FarmWorld.getInstance().getInventory().addItem(ItemManager.getInstance().getItemFromNickname("cabbageSeed"), 10);
+            FarmWorld.getInstance().getInventory().addItem(ItemManager.getInstance().getItemFromNickname("pumpkinSeed"), 10);
+            FarmWorld.getInstance().getInventory().addItem(ItemManager.getInstance().getItemFromNickname("tomatoSeed"), 10);
         } catch(FarmGameException ex) {
         }
     }

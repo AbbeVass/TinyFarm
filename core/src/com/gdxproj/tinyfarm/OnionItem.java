@@ -1,29 +1,29 @@
 package com.gdxproj.tinyfarm;
 
-public class WheatItem extends Item {
+public class OnionItem extends Item {
     @Override
     String getNickname() {
-        return "wheat";
+        return "onion";
     }
 
     @Override
     String getName() {
-        return "Wheat";
+        return "Onion";
     }
 
     @Override
     String getDescription() {
-        return "Harvested wheat.";
+        return "Harvested onion.";
     }
 
     @Override
     int getAppearance() {
-        return 3;
+        return 8;
     }
 
     @Override
     boolean useOnTile(int tileX, int tileY) {
-        /* Returning false means the wheat seed is not consumed. */
+        /* Returning false means the onion seed is not consumed. */
         
         return false;
     }
